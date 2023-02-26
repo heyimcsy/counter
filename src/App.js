@@ -6,6 +6,9 @@ function App() {
   const minusButtonClickHandler = () => {
     setCount (count -1);
   }
+  const tenMinusButtonHandler = () => {
+    setCount (count -10);
+  }
   return (
     <div>
       <div>{count}</div>
@@ -14,6 +17,11 @@ function App() {
           setCount (count +1);
         }}>+1</button>
         <button onClick={minusButtonClickHandler}>-1</button>
+        <br/>
+        <button onClick={()=>{
+          setCount (count +10);
+        }}>+10</button>
+        <button onClick={tenMinusButtonHandler}>-10</button>
       </div>
     </div>
   );
